@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.navbar{
+ padding: 1% 4%;
+ background-color: rgb(218, 208, 227);
+ border-bottom-right-radius: 3rem;
+
+}
+.navbar-brand{
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.search-date{
+  gap: 1rem;
+}
+
+/* news articles css  */
+.news{
+  width: 18rem;
+  height: 25rem;
+  overflow:scroll;
+  padding: 2vmin;
+  /* background-color: red; */
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5vmin;
+  /* column-gap: 2vmin; */
+  border-radius: 5px;
+}
+ 
+.news-articles{
+  width: 100%;
+  padding: 5vmin 5%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 4vmin;
+  row-gap: 5vmin; 
+}
+.source{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  line-height: 1.5;
+
+  
+}
+.card-img-top{
+  max-width: 100%;
+  height: 20vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png');
+  background-size: cover;
+  border-style: none;
+}
+
+.nonewsmsg{
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  right: 0rem;
+  z-index: 100;
+  font-weight: bold;
+  color: gray;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  gap: 1rem;
+
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 499px) {
+  .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    /* border: 1px solid #000; */
+    
+  }
+  .search-date{
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 80%; 
+  }
+  
+
+
+  .news {
+    padding: 3vmin;
+    height: 20vh;
+    width: 100%;
+
+  }
+
+  .news-articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+ 
+
+  .card-img-top {
+    height: 20vh;
+  }
+
+  .source {
+    font-size: 0.6rem;
+  }
+
+  .news-article:not(:first-child) {
+    display: none;
+  }
+
+  .news-article:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+/* @media only screen and (max-width: 767px) {
+  .news-articles {
+    row-gap: 2vmin;
+  }
+
+  .source {
+    font-size: 0.7rem;
+  }
+} */
