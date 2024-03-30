@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/taza-khabar/static/css/main.0f175c9f.css",
+    "main.js": "/taza-khabar/static/js/main.6cdc4f93.js",
+    "index.html": "/taza-khabar/index.html",
+    "main.0f175c9f.css.map": "/taza-khabar/static/css/main.0f175c9f.css.map",
+    "main.6cdc4f93.js.map": "/taza-khabar/static/js/main.6cdc4f93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f175c9f.css",
+    "static/js/main.6cdc4f93.js"
+  ]
+}
